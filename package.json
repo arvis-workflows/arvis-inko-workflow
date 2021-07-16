@@ -1,0 +1,28 @@
+{
+  "name": "arvis-inko-workflow",
+  "version": "0.0.1",
+  "description": "Arvis Workflow to convert misspelled english characters into korean letters (& vice versa)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup",
+    "prepublishOnly": "arvish-prepublish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:738/arvis-inko.git"
+  },
+  "keywords": [
+    "arvis",
+    "arvish",
+    "arvis-workflow",
+    "inko"
+  ],
+  "author": "Jon Jee",
+  "license": "MIT",
+  "dependencies": {
+    "arvish": ">=0.6.1",
+    "inko": "^1.0.6"
+  }
+}

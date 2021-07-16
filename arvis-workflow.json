@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "defaultIcon": "icon.png",
+  "creator": "Jon Jee",
+  "description": "Arvis Workflow to convert misspelled english characters into korean letters (& vice versa)",
+  "name": "arvis-inko-workflow",
+  "readme": "",
+  "version": "0.0.1",
+  "webAddress": "https://github.com/arvis-workflows/arvis-inko-workflow",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "command": "inko",
+      "title": "inko 한영타변환기 (영->한)",
+      "subtitle": "영타를 치세요",
+      "scriptFilter": "node index.js \"{query}\"",
+      "runningSubtext": "조금만 기다려주세요",
+      "withspace": true,
+      "argType": "required",
+      "actions": [
+        {
+          "modifiers": "normal",
+          "type": "clipboard",
+          "text": "{query}"
+        }
+      ]
+    }
+  ]
+}
